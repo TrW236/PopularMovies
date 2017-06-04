@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="project.trw236.com.popularmovies.DetailActivity">
+    tools:context="project.trw236.com.popularmovies.DetailActivity"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/title"
@@ -39,6 +43,7 @@
         android:layout_below="@+id/title"
         android:layout_margin="10dp"
         android:layout_toRightOf="@+id/poster"
+        android:layout_toEndOf="@+id/poster"
         android:text="Date"
         android:textSize="18sp"/>
 
@@ -49,6 +54,7 @@
         android:layout_below="@+id/release_date"
         android:layout_margin="10dp"
         android:layout_toEndOf="@+id/poster"
+        android:layout_toRightOf="@+id/poster"
         android:text="Vote"/>
 
     <TextView
@@ -59,3 +65,4 @@
         android:layout_margin="10dp"
         android:text="Overview"/>
 </RelativeLayout>
+</ScrollView>
